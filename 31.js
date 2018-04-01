@@ -1,12 +1,13 @@
-/**
-In England the currency is made up of pound, £, and pence, p, and there are eight coins in general circulation:
-
-1p, 2p, 5p, 10p, 20p, 50p, £1 (100p) and £2 (200p).
-It is possible to make £2 in the following way:
-
-1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p
-How many different ways can £2 be made using any number of coins?
- */
+/** 
+ * In England the currency is made up of pound, £, and pence, p, and there are
+ * eight coins in general circulation:
+ *
+ * 1p, 2p, 5p, 10p, 20p, 50p, £1 (100p) and £2 (200p). It is possible to make £2
+ * in the following way:
+ *
+ * 1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p How many different ways can £2 be
+ * made using any number of coins?
+*/
 
 var range = require('range').range
 var arySum = require('./src/arySum')
@@ -67,7 +68,7 @@ for(let i = 0; i < coinOpts.length; i++) {
     res = permutate(res, coinOpts[i])
 }
 
-// Quite slow solution. About 20 secs
+// Very slow solution. About 20 secs
 res = filterAryArySum(res, 200, 200)
 console.log('Result is: ' + res.length)
-console.log('Finised in: ' + timer.getTime() / 1000 + ' secs')
+console.log('Finished in: ' + timer.getTime() / 1000 + ' secs')
