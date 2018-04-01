@@ -17,4 +17,4 @@ ary.forEach( v => {
     res += parseInt(v)
 })
 
-console.log(res)
+console.log('Result is: ' + res)
