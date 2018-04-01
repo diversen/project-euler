@@ -1,48 +1,16 @@
+/** 
+ * 2520 is the smallest number that can be divided by each of the numbers from 1
+ * to 10 without any remainder.
+ *
+ * What is the smallest positive number that is evenly divisible by all of the
+ * numbers from 1 to 20?
+*/
+
 var num = 2520
 
 var ary = Array.from({length: 20}, function (val, i) {
     return ++i
 });
-
-function isPrime (num) {
-    var res = true
-    for(let i = 2; i < num; i++) {
-        if (num%i === 0) {
-            res = false
-            break
-        }
-    }
-    return res
-}
-
-function factorizeComposite (num) {
-    if (isPrime(num)) {
-        return num
-    }
-
-    var initNum = num
-    var str = ''
-    var val = 1
-    var i = 2
-    while(i) {
-        if (isPrime(i)) {
-            if (num%i === 0) {
-                val = val * i
-                num = num / i
-                str += i.toString() + ' '
-                if (val === initNum) {
-                    return str
-                }
-                continue
-            }
-        }
-        i++      
-    }
-    return str
-}
-
-// console.log(isPrime(120))
-console.log(factorizeComposite(111111111)) 
 
 function isDivisible (num) {
     
@@ -55,14 +23,11 @@ function isDivisible (num) {
     return true
 }
 
-// console.log(isDivisible(2520))
-
-/*
 var i = 1
 while(i) {
     if (isDivisible(i)) {
-        console.log(i)
+        console.log("Result is: " + i)
         break
     }
     i++
-}*/
+}

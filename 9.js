@@ -1,11 +1,11 @@
-/** 
-A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,
-
-a2 + b2 = c2
-For example, 32 + 42 = 9 + 16 = 25 = 52.
-
-There exists exactly one Pythagorean triplet for which a + b + c = 1000.
-Find the product abc.
+/**
+ * A Pythagorean triplet is a set of three natural numbers, a < b < c, for
+ * which,
+ *
+ * a2 + b2 = c2 For example, 32 + 42 = 9 + 16 = 25 = 52.
+ *
+ * There exists exactly one Pythagorean triplet for which a + b + c = 1000. Find
+ * the product abc.
 */
 
 function isTriplet (a,b,c) {
@@ -32,9 +32,8 @@ for (m = 1; m < 100; m++) {
         var triplet = createTriplet(m, n)
         var sum = triplet.a + triplet.b + triplet.c 
         if (sum == 1000) {
-            console.log(n,m)
-            console.log(triplet)
-            console.log(triplet.a*triplet.b*triplet.c)
+
+            console.log('Result is: ' + triplet.a*triplet.b*triplet.c)
         }
     }
 }

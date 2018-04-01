@@ -1,6 +1,10 @@
+/**
+ * Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
+ */
+
 "use strict";
 
-var addInts = require('./src/addInts')
+var bigint = require('big-integer')
 
 
 var str = `37107287533902102798797998220837590246510135740250
@@ -108,7 +112,7 @@ var intAry = str.split('\n')
 var res = '0'
 
 for(var i of intAry) {
-    res = addInts(i, res)
+    res = bigint(i).add(res)
 
 }
-console.log(res.substr(0,10))
+console.log('Result is: ' + res.toString().substr(0,10))
