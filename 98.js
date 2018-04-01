@@ -3,6 +3,8 @@ var wordValue = require('./src/wordValue')
 var arySum = require('./src/arySum')
 var data = readFile.readSync('./resources/p098_words.txt')
 
+// YYY
+
 function parseWordFile (data) {
     let names = data.replace(/['"]+/g, "").toLowerCase().split(',')
     names = names.sort(function(a, b){

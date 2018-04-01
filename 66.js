@@ -1,6 +1,8 @@
 var euklid = require('./src/euklidsExtendedAlgorithm')
 var gcd = require('./src/gcd')
 
+// YYY
+
  /**
  * Pells equation
  * 
