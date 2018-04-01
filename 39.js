@@ -1,15 +1,11 @@
-/**
-If p is the perimeter of a right angle triangle with integral length sides,
-{a,b,c}, there are exactly three solutions for p = 120.
-
-{20,48,52}, {24,45,51}, {30,40,50}
-
-For which value of p ≤ 1000, is the number of solutions maximised?
- */
-
-// Formula for perimeter on a right triangle: P=a+b+sqrt(a^2+b^2)
-// c^2 = a^2 + b^2 
-"use strict"
+/** 
+ * If p is the perimeter of a right angle triangle with integral length sides,
+ * {a,b,c}, there are exactly three solutions for p = 120.
+ *
+ * {20,48,52}, {24,45,51}, {30,40,50}
+ *
+ * For which value of p ≤ 1000, is the number of solutions maximised?
+*/
 
 var timer = require('./src/timer')
 

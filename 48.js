@@ -1,3 +1,9 @@
+/** 
+ * The series, 11 + 22 + 33 + ... + 1010 = 10405071317.
+ *
+ * Find the last ten digits of the series, 11 + 22 + 33 + ... + 10001000.
+*/
+
 var bigInt = require("big-integer")
 var sum = 0
 for(i = 1; i <= 1000; i++) {
@@ -5,4 +11,4 @@ for(i = 1; i <= 1000; i++) {
     sum = bigInt(sum).add(res)	
 }
 
-console.log(sum.toString(10))
+console.log('Result is: ' + sum.toString(10).slice(-10))
