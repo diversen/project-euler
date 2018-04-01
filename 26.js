@@ -93,7 +93,7 @@ var primeFactors = primeFactors(totientProduct)
 // Get possible products of totientProducts prime factors
 var products = productsFromAry(primeFactors)
 
-// Look for mod 10^k mod n = 1 (n if bigNum)
+// Look for mod 10^k mod n = 1 (bignum as modulo)
 for(let i = 0; i < products.length; i++) {
     let res = modPow(10, products[i], bigNum)
     if (res === 1) {
