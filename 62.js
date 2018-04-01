@@ -43,6 +43,7 @@ for (let i = 0; i < 10000; i++) {
     if (map[sortDigits(cube(i))] == 5) {
         console.log('Permutated numbers with 5 cubes found. The numbers are: ')
         console.log(numbersMap[permIdentifier])
+        console.log('Result is: ' + numbersMap[permIdentifier][0])
         console.log('Found in seconds: ' + timer.getTime() / 1000)
         break
     }

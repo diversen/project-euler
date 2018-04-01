@@ -21,4 +21,4 @@ for(let i = 0; i < rows.length - 1; i++) {
     res.push(rowCurrent)
 }
 
-console.log(res)
+console.log('Result is: ' + res[res.length - 1])

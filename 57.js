@@ -63,7 +63,7 @@ console.log("In seconds: " + timer.getTime() / 1000)
  * Quite slow. But it calculates the exact square root expansions
  * It could have been done a lot faster.
  * 
- * I need to read up on root expansions, e.g. how to simplify a expression
+ * Solved it by simplifing a nominator / denominator expression
  * like this: 
  * 
  * https://www.wolframalpha.com/input/?i=1+%2B+1%2F(2%2B1%2F(2+%2B+1%2F(2+%2B+1%2F(2+%2B+1%2F2))))

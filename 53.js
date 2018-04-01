@@ -15,6 +15,7 @@
  */
 
 var binomialCof = require('./src/binomialCoefficient')
+var timer = require('./src/timer')
 
 function nChooseExceeds (n,c) {
     let res = binomialCof(n, c)
@@ -33,4 +34,5 @@ for(let n = 23; n <= 100; n++) {
     }
 }
 
-console.log(sum)
+console.log('Result is: ' + sum)
+console.log('In time: ' + timer.getTime() / 1000)
