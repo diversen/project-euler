@@ -6,7 +6,7 @@ var bigInt = require("big-integer")
  * @param {object} f2 {n, d}
  * @returns {object} result {n, d}
  */
-function fractionMulitply (f1, f2) {
+function fractionMultiply (f1, f2) {
     return {
         n: bigInt(f1.n).multiply(f2.n).toString(), 
         d: bigInt(f1.d).multiply(f2.d).toString()
@@ -35,6 +35,6 @@ function fractionAdd (f1, f2) {
 }
 
 module.exports = {
-    fractionMulitply: fractionMulitply,
+    fractionMultiply: fractionMultiply,
     fractionAdd: fractionAdd
 }
