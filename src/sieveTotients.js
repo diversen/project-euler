@@ -16,6 +16,7 @@ function sieve (totients, num) {
 
         // Use eulers totient function
         // φ(n) = n *(1 - 1/p1)* ... (1 - 1/pn).
+        // Euler was a genius ...
         totients[i*num] = totients[i*num] * (1 - (1/num))
     }
     return totients
