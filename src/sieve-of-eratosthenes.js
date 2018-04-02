@@ -14,7 +14,7 @@ function sieve(ary, num) {
 
 function sieveOfEratosthenes(length) {
 
-    var testRange = new Array(length).fill(1)
+    var testRange = new Array(length + 1).fill(1)
     for (let i = 2; i < length; i++) {
         
         if (Math.pow(i, 2) > length) {
