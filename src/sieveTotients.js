@@ -1,13 +1,12 @@
 /** 
- * Readable version of totient sieve
+ * Readable version of a totient sieve
 */
-
 var primeSieve = require('./sieve-of-eratosthenes')
 
 function sieve (totients, num) {
     
 
-    // If prime
+    // If prime. Then totient is = -1 of the prime
     totients[num]--
 
     // Calculate number of iterations of num
@@ -38,7 +37,7 @@ function sieveTotients (length) {
         totients = sieve(totients, primes[i]) 
     }
     
-    // Parse integers
+    // Parse integers. Some numbers may be like 6.0000000 ...
     totients.forEach( (v, i) => {
         totients[i] = parseInt(v)
     })
