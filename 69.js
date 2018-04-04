@@ -1,6 +1,6 @@
 var sieveTotients = require('./src/sieveTotients')
-var totients = sieveTotients(1000000)
 var timer = require('./src/timer')
+var totients = sieveTotients(1000000)
 
 var max = 0
 var vars = {}
