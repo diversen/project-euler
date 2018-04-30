@@ -7,7 +7,7 @@ function getSign(x, y) {
     return '+'
 }
 /**
- * E.g. (-x+y)^7
+ * E.g. (-x*-y)^7
  * @param {*} x 
  * @param {*} y 
  * @param {*} pow 
@@ -20,25 +20,22 @@ function binomialTheorem(x, y, pow) {
         let toPowX = pow - i
         let toPowY = i
 
-        let signX = Math.pow(x, toPowX) * coefficient
-        let signY = Math.pow(y, toPowY)
+        let powX = Math.pow(x, toPowX) 
+        let powY = Math.pow(y, toPowY)
 
-        let sign = signX * signY
+        let sign = powX * powY
         if (sign > 0) {
             sign = '+' 
         } else {
             sign = '-'
         }
 
-        res += sign + coefficient
+        res += sign + Math.abs(coefficient * Math.pow(x, toPowX) * Math.pow(y, toPowY))
         if (toPowX) {
-
             res += 'x' + '^' + toPowX
         }
         
         if (toPowY) {
-
-
             res += '*y' + '^' + toPowY
         }
 
@@ -46,5 +43,5 @@ function binomialTheorem(x, y, pow) {
     return res
 }
 
-let res = binomialTheorem(1, -1, 5)
+let res = binomialTheorem(2, -7, 9)
 console.log(res)
