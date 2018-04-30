@@ -1,11 +1,5 @@
 var binomialCoefficent = require('./binomialCoefficient')
 
-function getSign(x, y) {
-    if (x*y < 0) {
-        return '-'
-    }
-    return '+'
-}
 /**
  * E.g. (-x*-y)^7
  * @param {*} x 
