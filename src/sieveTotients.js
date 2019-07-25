@@ -5,7 +5,6 @@ var primeSieve = require('./sieve-of-eratosthenes')
 
 function sieve (totients, num) {
     
-
     // If prime. Then totient is = -1 of the prime
     totients[num]--
 
@@ -17,7 +16,6 @@ function sieve (totients, num) {
         // φ(n) = n *(1 - 1/p1)* ... (1 - 1/pn).
         totients[i*num] = totients[i*num] * (1 - (1/num))
     }
-    // return totients
 }
 
 function sieveTotients (length) {

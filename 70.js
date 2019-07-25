@@ -6,20 +6,14 @@ var totients = totient(10000000);
 var minRatio = 10;
 var n = 0;
 for(let i = 2; i < totients.length; i++ ) {
-    // console.log(i, totients[i]);
 
     let ratio = i / totients[i];
-    // console.log(ratio)
-
     if (ratio < minRatio) {
         if (isIdentical(i, totients[i])) {
             minRatio = ratio;
             n = i;
         }
-        
     }
-
-
 }
 
 
