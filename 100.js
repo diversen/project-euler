@@ -2,7 +2,7 @@
 // 
 // (x/n) * ( (x-1)/ (n-1)) = 1/2 , n > 1
 //
-// <https://www.wolframalpha.com/input/?i=(x%2Fn)+*+(+(x-1)%2F+(n-1))+%3D+1%2F2+,+n+%3E+1>
+// https://www.wolframalpha.com/input/?i=(x%2Fn)+*+(+(x-1)%2F+(n-1))+%3D+1%2F2+,+n+%3E+1
 //
 // First solution beyond 10^12
 // 
