@@ -13,6 +13,13 @@ called a totative, the totient function phi(n) can be simply defined as the
 number of totatives of n. For example, there are eight totatives of 24 (1, 5, 7,
 11, 13, 17, 19, and 23), so phi(24)=8.
 
+The function is very naive as it does not really use eulers totient function,
+but just checks the gcd of numbers that iterates up to n 
+
+Eulers totient functon:
+
+φ(n) = n *(1 - 1/p1)* ... (1 - 1/pn).
+
 */
 
 /**

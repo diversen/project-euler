@@ -21,16 +21,6 @@ var example =
 18  5  4  3 12
 17 16 15 14 13`
 
-// 1.: 1
-// +8
-// 2.: 9
-// +7 
-// 3.: 16
-// 4. 48
-
-// 1. 1*1      = 1
-// 2  3*3 - n1 = 8
-// 3  5*5 - n1 + n2 = 16 
 function generateSpiral (sizeSpiral) {
 
     var square = 1
