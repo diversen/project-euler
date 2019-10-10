@@ -59,15 +59,17 @@ def euler92():
 
     c = 0
 
-    # max length of parmutation is 7 -> len('9999999')
+    """ max length of parmutation is 7 -> len('9999999') """
+    
     max_length = 7 
 
-    # Get all combinations with replacement from the numbers from 0 to 9999999 
-    # Now it is just 11440 iterations
+    """ Get all combinations with replacement from the numbers from 0 to 9999999 
+        Now it is just 11440 iterations """
     
     l = [list(t) for t in itertools.combinations_with_replacement([0, 1, 2, 3, 4, 5, 6, 7, 8, 9], max_length)]
 
-    # remove [0,0,0,0,0,0,0]
+    """ remove [0,0,0,0,0,0,0] """
+
     del l[0]
 
     print('Number of combinations to consider', len(l))
@@ -75,15 +77,15 @@ def euler92():
     for num_list in l:
 
         s = ''.join(str(x) for x in num_list)
+        digits = [0 for n in range(10)]
 
         if iterate(s) == 89:
 
-            digits = {}
-            digits = [0 for n in range(10)]
+            d = digits.copy()
             for n in num_list:
-                digits[n] += 1 
+                d[n] += 1 
 
-            r = multinomial(digits, max_length)
+            r = multinomial(d, max_length)
             c += r
         
 
@@ -93,6 +95,8 @@ def euler92():
 timer = timeit.timeit(stmt=euler92, number=1)
 print("In time: ", timer, 'secs')
 
-# -> Number of combinations to consider 11439
-# -> Result 8581146
-# -> In time:  0.133517513 secs
+"""
+-> Number of combinations to consider 11439
+-> Result 8581146
+-> In time:  0.133517513 secs
+"""
