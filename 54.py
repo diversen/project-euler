@@ -24,6 +24,7 @@ class Poker(object):
             elif True: cards[0] = int(cards[0])
             n_hand.append(cards)
 
+        # Sort by card weights 2 -> 14
         n_hand.sort(key=lambda x: x[0])
         return n_hand  
 
@@ -101,7 +102,7 @@ class Poker(object):
         for c in hand:
             d[c[1]] += 1
 
-        for key, value in d.items():
+        for _, value in d.items():
             if value == 5:
                 return hand[4][0]
 
@@ -182,8 +183,6 @@ def test():
     p.run_games()
 
 import timeit
-timer = timeit.timeit(
-                    stmt = test, 
-                    number = 1)
+timer = timeit.timeit(stmt = test, number = 1)
 
 print("In time: ", timer, 'secs')
