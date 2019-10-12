@@ -22,10 +22,11 @@ function getNameValue (name) {
 }
 
 names = parseWordFile(data)
+console.log(names);
 
 
 
-
+return;
 
 for(let i = 0; i < names.length; i++) {
 
