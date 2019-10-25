@@ -14,7 +14,6 @@ var ary = Array.from({length: 20}, function (val, i) {
 
 function isDivisible (num) {
     
-    var res = false
     for(let val of ary) {
         if (num % val !== 0) {
             return false
