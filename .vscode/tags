@@ -1,0 +1,44 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+54.py	../54.py	1;"	kind:file	line:1
+59.py	../59.py	1;"	kind:file	line:1
+92.py	../92.py	1;"	kind:file	line:1
+Poker	../54.py	/^class Poker(object):$/;"	kind:class	line:5
+convert_hand	../54.py	/^    def convert_hand(self, hand):$/;"	kind:member	line:13
+euler92	../92.py	/^def euler92():$/;"	kind:function	line:58
+fact	../92.py	/^def fact (n):$/;"	kind:function	line:38
+flush	../54.py	/^    def flush(self, hand):$/;"	kind:member	line:96
+four_kind	../54.py	/^    def four_kind(self, hand):$/;"	kind:member	line:117
+full_house	../54.py	/^    def full_house(self, hand):$/;"	kind:member	line:111
+get_file_contents	../59.py	/^def get_file_contents():$/;"	kind:function	line:9
+get_next	../92.py	/^def get_next(num):$/;"	kind:function	line:18
+get_points	../54.py	/^    def get_points(self, hand):$/;"	kind:member	line:130
+get_winner	../54.py	/^    def get_winner(self, hands):$/;"	kind:member	line:159
+high_card	../54.py	/^    def high_card(self, hand):$/;"	kind:member	line:31
+identical_count	../54.py	/^    def identical_count(self, hand):$/;"	kind:member	line:36
+iterate	../92.py	/^def iterate(num):$/;"	kind:function	line:31
+itertools	../59.py	/^import itertools$/;"	kind:namespace	line:1
+itertools	../92.py	/^import itertools$/;"	kind:namespace	line:13
+lists	../59.py	/^lists = list(p)$/;"	kind:variable	line:19
+memo	../92.py	/^memo = {}$/;"	kind:variable	line:16
+multinomial	../92.py	/^def multinomial(l, n):$/;"	kind:function	line:49
+numbers	../59.py	/^numbers = t.split(',')$/;"	kind:variable	line:16
+p	../59.py	/^p = itertools.permutations([i for i in range(97, 123)], 3)$/;"	kind:variable	line:18
+pair	../54.py	/^    def pair(self, hand):$/;"	kind:member	line:48
+perm	../59.py	/^def perm(n):$/;"	kind:function	line:3
+read_file	../54.py	/^    def read_file (self, file_name = None):$/;"	kind:member	line:7
+run_games	../54.py	/^    def run_games(self):$/;"	kind:member	line:162
+straight	../54.py	/^    def straight(self, hand):$/;"	kind:member	line:79
+straight_flush	../54.py	/^    def straight_flush(self, hand):$/;"	kind:member	line:125
+t	../59.py	/^t = get_file_contents()$/;"	kind:variable	line:15
+test	../54.py	/^def test():$/;"	kind:function	line:181
+three_kind	../54.py	/^    def three_kind(self, hand):$/;"	kind:member	line:71
+timeit	../54.py	/^import timeit$/;"	kind:namespace	line:185
+timeit	../92.py	/^import timeit$/;"	kind:namespace	line:14
+timer	../54.py	/^timer = timeit.timeit(stmt = test, number = 1)$/;"	kind:variable	line:186
+timer	../92.py	/^timer = timeit.timeit(stmt=euler92, number=1)$/;"	kind:variable	line:95
+two_pair	../54.py	/^    def two_pair(self, hand):$/;"	kind:member	line:58
